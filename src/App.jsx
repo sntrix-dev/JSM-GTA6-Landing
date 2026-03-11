@@ -1,16 +1,17 @@
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/all'
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import Hero from "./sections/Hero";
+import Navbar from "./sections/Navbar";
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
-    return (
-        <main>
-            <div>
-                <h1 className='text-3xl text-indigo-100'>GTA Landing</h1>
-            </div>
-        </main>
-    )
-}
+  return (
+    <main>
+      <Navbar />
+      <Hero />
+    </main>
+  );
+};
 
-export default App
+export default App;
